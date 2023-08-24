@@ -1,12 +1,18 @@
 import MenuItem from 'components/controls/MenuItem/MenuItem';
+import { useLayoutSelector } from 'hooks/useLayoutSelector';
 import './SidePanel.scss';
 
 const SidePanel = () => {
 
+  const selector = useLayoutSelector();
+
   return (
     <div id='sidePanel'>
-      <MenuItem name='Summary' path=''></MenuItem>
-      <MenuItem name='Education' path='education'></MenuItem>
+      {selector.sidePanelOpen &&
+        <div>
+          <MenuItem name='Summary' path=''></MenuItem>
+          <MenuItem name='Education' path='education'></MenuItem>
+        </div>}
     </div>
   );
 }

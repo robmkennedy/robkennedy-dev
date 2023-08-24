@@ -1,0 +1,3 @@
+type LayoutState  = {
+    sidePanelOpen: boolean
+}
