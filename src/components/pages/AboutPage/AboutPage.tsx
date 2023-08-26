@@ -1,7 +1,7 @@
 import { useFetchQualifications } from 'hooks/networkHooks';
-import './EducationPage.scss';
+import './AboutPage.scss';
 
-const EducationPage = () => {
+const AboutPage = () => {
 
     const { isLoading, error, data } = useFetchQualifications();
 
@@ -10,9 +10,9 @@ const EducationPage = () => {
     }
 
     return (
-        <div id='educationPage'>
+        <div id='aboutPage'>
         </div>
     );
 }
 
-export default EducationPage;
+export default AboutPage;

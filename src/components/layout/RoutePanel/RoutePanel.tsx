@@ -1,20 +1,22 @@
 import { Route, Routes } from 'react-router-dom';
-import './RoutePanel.scss';
 import Header from 'components/layout/Header/Header';
-import EducationPage from 'components/pages/EducationPage/EducationPage';
-import SummaryPage from 'components/pages/SummaryPage/SummaryPage';
+import routes from 'utils/routes';
+import './RoutePanel.scss';
 
 const RoutePanel = () => {
 
-  return (
-    <div id='routePanel'>
-      <Header></Header>
-      <Routes>
-        <Route path='/' element={<SummaryPage />}></Route>
-        <Route path='/education' element={<EducationPage />}></Route>
-      </Routes>
-    </div>
-  );
+    const routeMarkup = routes.map(({ routePath, component: Component }, index) => {
+        return <Route path={routePath} element={<Component />} key={index}></Route>
+    })
+
+    return (
+        <div id='routePanel'>
+            <Header></Header>
+            <Routes>
+                {routeMarkup}
+            </Routes>
+        </div>
+    );
 }
 
 export default RoutePanel;

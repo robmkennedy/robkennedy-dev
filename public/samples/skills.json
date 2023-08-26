@@ -1,0 +1,26 @@
+{
+    "designSkills": [
+        "Engaging with stakeholders to translate product requirements to final solutions.",
+        "Creating detailed wireframes with Balsamiq and Adobe XD.",
+        "Rapid building of high-fidelity prototypes with React.",
+        "Brainstorming whiteboard sessions and design of user flows.",
+        "Integrating Google Analytics with web applications to identify user priorities.",
+        "Utilising years of experience to help UX designers solve issues before they occur."
+    ],
+    "developmentSkills": [
+        "Advanced programming with HTML, JavaScript, TypeScript, CSS, and SASS.",
+        "Building responsive web applications with React, Redux, Vue, jQuery, and Bootstrap.",
+        "Server-side development with NodeJS and Express.",
+        "Java development in large-scale, multi-threaded applications.",
+        "GIT and Subversion source code management.",
+        "Agile and Scrum lifecycle management with Confluence and JIRA."
+    ],
+    "generalSkills": [
+        "Collaborating with teams of engineers working remotely around the world.",
+        "Experience with the entire product lifecycle of large-scale software applications.",
+        "Delegating tasks and solving problems on a dynamic basis.",
+        "Mentoring other engineers who are new to a particular area.",
+        "Sharing knowledge via presentations, direct teaching, and documentation creation.",
+        "Organising team meetings, brainstorming and communicating effectively."
+    ]
+}

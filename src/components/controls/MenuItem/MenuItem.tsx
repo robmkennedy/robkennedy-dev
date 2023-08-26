@@ -1,7 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import './MenuItem.scss';
 
-const MenuItem = ({name, path} : MenuItemProps) => {
+type MenuItemProps = {
+    name: string;
+    path: string;
+};
+
+const MenuItem = ({ name, path }: MenuItemProps) => {
 
     return (
         <div className='menu-item'>

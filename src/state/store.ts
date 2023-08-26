@@ -1,3 +1,7 @@
+/// rtk toolkit configurestore automatically sets up redux thuink milldeware
+
+
+
 import { configureStore } from '@reduxjs/toolkit';
 import layoutSlice from './slices/layoutSlice';
 

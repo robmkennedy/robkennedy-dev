@@ -2,6 +2,7 @@
 // A few more things are implicitly done by RTK, for example createAsyncThunk will autmatically create three actions for every thunk: yourActionPrefix/pending, yourActionPrefix/fulfilled and yourActionPrefix/rejected.
 
 import { createSlice } from '@reduxjs/toolkit';
+import { LayoutState } from 'utils/types';
 
 const initialLayoutState: LayoutState = {
     sidePanelOpen: true
