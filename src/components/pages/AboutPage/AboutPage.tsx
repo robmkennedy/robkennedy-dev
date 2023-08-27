@@ -3,11 +3,11 @@ import './AboutPage.scss';
 
 const AboutPage = () => {
 
-    const { isLoading, error, data } = useFetchQualifications();
+    // const { isLoading, error, data } = useFetchQualifications();
 
-    if (data) {
-        debugger;
-    }
+    // if (data) {
+    //     debugger;
+    // }
 
     return (
         <div id='aboutPage'>

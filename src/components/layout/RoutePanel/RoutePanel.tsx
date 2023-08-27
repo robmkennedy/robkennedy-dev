@@ -1,5 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
-import Header from 'components/layout/Header/Header';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import routes from 'utils/routes';
 import './RoutePanel.scss';
 
@@ -11,9 +10,9 @@ const RoutePanel = () => {
 
     return (
         <div id='routePanel'>
-            <Header></Header>
             <Routes>
                 {routeMarkup}
+                <Route path="*" element={<Navigate to='/home' replace />} />
             </Routes>
         </div>
     );

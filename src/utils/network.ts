@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import Skills from "model/Skills";
 import Profile from "model/Profile";
 import Employer from "model/Employer";
@@ -17,13 +17,13 @@ export const fetchSkills = (): Promise<Skills> => {
 }
 
 export const fetchProfile = (): Promise<Profile> => {
-    return axiosInstance.get('profile.json').then(response => response.data);
+    return axiosInstance.get('profile.json').then(response => new Profile(response.data));
 }
 
-export const fetchEmployers = (): Promise<Employer[]> => {
+export const fetchEmployers = (): Promise<AxiosResponse> => {
     return axiosInstance.get('employers.json').then(response => response.data);
 }
 
-export const fetchQualifications = (): Promise<Qualification[]> => {
+export const fetchQualifications = (): Promise<AxiosResponse> => {
     return axiosInstance.get('qualifications.json').then(response => response.data);
 }

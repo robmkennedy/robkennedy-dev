@@ -1,5 +1,5 @@
 import SkillsPage from 'components/pages/SkillsPage/SkillsPage';
-import ProfilePage from 'components/pages/ProfilePage/ProfilePage';
+import HomePage from 'components/pages/HomePage/HomePage';
 import EducationPage from 'components/pages/EducationPage/EducationPage';
 import ExperiencePage from 'components/pages/ExperiencePage/ExperiencePage';
 import ProjectsPage from 'components/pages/ProjectsPage/ProjectsPage';
@@ -13,12 +13,12 @@ type RouteProps = {
 };
 
 const routes: RouteProps[] = [
-    { labelText: 'Profile', routePath: '/', component: ProfilePage },
+    { labelText: 'Home', routePath: '/home', component: HomePage },
     { labelText: 'Skills', routePath: '/skills', component: SkillsPage },
     { labelText: 'Experience', routePath: '/experience', component: ExperiencePage },
     { labelText: 'Education', routePath: '/education', component: EducationPage },
     { labelText: 'Projects', routePath: '/projects', component: ProjectsPage },
-    { labelText: 'About This Page', routePath: '/about', component: AboutPage }
+    { labelText: 'This Page', routePath: '/about', component: AboutPage }
 ];
 
 export default routes;

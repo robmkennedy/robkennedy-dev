@@ -1,3 +1,27 @@
 $link-decoration: none;
 
-@use '~bootstrap/scss/bootstrap';
+$body-color: white;
+$link-color: white;
+
+$nav-link-color:                    red;
+$nav-link-hover-color:              green;
+
+$nav-link-padding-y:                1rem;
+$navbar-nav-link-padding-x:         2rem;
+
+
+$navbar-light-color:                green;
+$navbar-light-hover-color:          pink;
+$navbar-light-active-color:         orange;
+// $navbar-light-disabled-color:       #131313;
+// $navbar-light-icon-color:           #131313;
+// $navbar-light-toggler-icon-bg:      purple;
+$navbar-light-toggler-border-color: purple;
+$navbar-light-brand-color:          blue;
+$navbar-light-brand-hover-color:    blue;
+
+$body-bg: #505050;
+$body-tertiary-bg: transparent;
+
+@import '~bootstrap/scss/bootstrap';
+

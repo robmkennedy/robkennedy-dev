@@ -1,4 +1,4 @@
-import './Loader.scss';
+import './Error.scss';
 
 type ErrorProps = {
     message: string

@@ -7,8 +7,8 @@ export default class Profile {
 
     static PROFILE_ERROR = 'VALUE NOT FOUND';
 
-    constructor(jsonResponse: string) {
-        const { name, title, photo, linkedIn, summary } = JSON.parse(jsonResponse);
+    constructor(jsonResponse: Profile) {
+        const { name, title, photo, linkedIn, summary } = jsonResponse;
 
         this.#name = name || Profile.PROFILE_ERROR;
         this.#title = title || Profile.PROFILE_ERROR;

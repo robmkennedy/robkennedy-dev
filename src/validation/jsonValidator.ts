@@ -1,9 +1,9 @@
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import schemaSkills from 'utils/validation/schemaSkills';
-import schemaProfile from 'utils/validation/schemaProfile';
-import schemaEmployers from 'utils/validation/schemaEmployers';
-import schemaQualifications from 'utils/validation/schemaQualifications';
+import schemaSkills from 'validation/schemaSkills';
+import schemaProfile from 'validation/schemaProfile';
+import schemaEmployers from 'validation/schemaEmployers';
+import schemaQualifications from 'validation/schemaQualifications';
 
 
 const jsonValidator = new Ajv();
