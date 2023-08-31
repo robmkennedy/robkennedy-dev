@@ -3,6 +3,7 @@ import Skills from "model/Skills";
 import Profile from "model/Profile";
 import Employer from "model/Employer";
 import Qualification from "model/Qualification";
+import Note from "model/Note";
 
 const axiosInstance = axios.create({
     baseURL: '/samples',
@@ -13,17 +14,27 @@ const axiosInstance = axios.create({
 });
 
 export const fetchSkills = (): Promise<Skills> => {
-    return axiosInstance.get('skills.json').then(response => response.data);
+    return axiosInstance.get('skills.json').then(response => new Skills(response.data));
 }
 
 export const fetchProfile = (): Promise<Profile> => {
     return axiosInstance.get('profile.json').then(response => new Profile(response.data));
 }
 
-export const fetchEmployers = (): Promise<AxiosResponse> => {
-    return axiosInstance.get('employers.json').then(response => response.data);
+export const fetchEmployers = (): Promise<Employer[]> => {
+    return axiosInstance.get('employers.json').then(response => {
+        return response.data.map((data: Employer) => new Employer(data));
+    });
 }
 
-export const fetchQualifications = (): Promise<AxiosResponse> => {
-    return axiosInstance.get('qualifications.json').then(response => response.data);
+export const fetchQualifications = (): Promise<Qualification[]> => {
+    return axiosInstance.get('qualifications.json').then(response => {
+        return response.data.map((data: Qualification) => new Qualification(data));
+    });
+}
+
+export const fetchNotes = (): Promise<Note[]> => {
+    return axiosInstance.get('notes.json').then(response => {
+        return response.data.map((data: Note) => new Note(data));
+    });
 }

@@ -1,7 +1,25 @@
+@use '/src/styles/colors';
+@use '/src/styles/variables';
+
 #homePage {
 
-    #profileImg {
-        width: 50%;
-        border-radius: 50%;
+    #infoPanel {
+        display: flex;
+
+        img {
+            width: 100%;
+            max-width: variables.$rk-max-image-size;
+            max-height: variables.$rk-max-image-size;
+            border-radius: 50%;
+            margin-right: 40px;
+        }
+
+        #profileTitle {
+            color: colors.$rk-secondary;
+        }
+
+        #profileLink {
+            color: colors.$rk-link;
+        }
     }
 }

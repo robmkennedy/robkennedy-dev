@@ -1,0 +1,51 @@
+@use '/src/styles/colors';
+@use '/src/styles/variables';
+
+.accordion-header {
+
+    button {
+        &:after {
+            margin-left: 20px;
+        }
+
+        &.collapsed {
+            .rk-employer-name {
+                color: colors.$rk-secondary;
+            }
+        }
+
+        .rk-employer-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.rk-employer-body {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: variables.$rk-line-height;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    .rk-employer-image {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: variables.$rk-max-logo-size;
+        height: variables.$rk-max-logo-size;
+        background-color: white;
+        padding: 15px;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,36 +1,35 @@
 import { UseQueryResult, useQuery } from "@tanstack/react-query";
-import { AxiosResponse } from "axios";
+import Employer from "model/Employer";
+import Note from "model/Note";
 import Profile from "model/Profile";
+import Qualification from "model/Qualification";
 import Skills from "model/Skills";
-import { fetchEmployers, fetchProfile, fetchSkills, fetchQualifications } from "utils/network";
+import { fetchEmployers, fetchProfile, fetchSkills, fetchQualifications, fetchNotes } from "utils/network";
 
 enum QueryKeys {
     QUERY_SKILLS = 'QUERY_SKILLS',
     QUERY_PROFILE = 'QUERY_PROFILE',
     QUERY_EMPLOYERS = 'QUERY_EMPLOYERS',
-    QUERY_QUALIFICATIONS = 'QUERY_QUALIFICATIONS'
+    QUERY_QUALIFICATIONS = 'QUERY_QUALIFICATIONS',
+    QUERY_NOTES = 'QUERY_NOTES'
 }
 
-
-const transformSkills = (response: AxiosResponse): Skills => new Skills(response.data);
-
-export const useFetchSkills = () => {
-    // return useQuery({ queryKey: [QueryKeys.QUERY_SKILLS], queryFn: fetchSkills, select: transformSkills});
+export const useFetchSkills = (): UseQueryResult<Skills> => {
+    return useQuery({ queryKey: [QueryKeys.QUERY_SKILLS], queryFn: fetchSkills});
 };
 
-// const transformProfile = (response: Profile): Profile => {
-//     debugger;
-//     return new Profile(response)
-// };
-
-export const useFetchProfile = () => {
+export const useFetchProfile = (): UseQueryResult<Profile> => {
     return useQuery({ queryKey: [QueryKeys.QUERY_PROFILE], queryFn: fetchProfile});
 };
 
-export const useFetchEmployers = () => {
+export const useFetchEmployers = (): UseQueryResult<Employer[]> => {
     return useQuery({ queryKey: [QueryKeys.QUERY_EMPLOYERS], queryFn: fetchEmployers });
 };
 
-export const useFetchQualifications = () => {
+export const useFetchQualifications = (): UseQueryResult<Qualification[]> => {
     return useQuery({ queryKey: [QueryKeys.QUERY_QUALIFICATIONS], queryFn: fetchQualifications });
+};
+
+export const useFetchNotes = (): UseQueryResult<Note[]> => {
+    return useQuery({ queryKey: [QueryKeys.QUERY_NOTES], queryFn: fetchNotes});
 };

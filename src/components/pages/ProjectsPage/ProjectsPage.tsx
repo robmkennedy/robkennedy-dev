@@ -1,17 +1,25 @@
 import { useFetchQualifications } from 'hooks/networkHooks';
 import './ProjectsPage.scss';
+import { usePageStatus } from 'hooks/componentHooks';
+import { Container, Row, Col } from 'react-bootstrap';
+import Page from '../Page/Page';
 
 const ProjectsPage = () => {
 
-    const { isLoading, error, data } = useFetchQualifications();
-
-    if (data) {
-        debugger;
-    }
+    const pageContent = (
+        <Container>
+            <Row>
+                <Col>
+                    <div className='fw-light'>Future projects will be linked from this page.</div>
+                </Col>
+            </Row>
+        </Container>
+    );
 
     return (
-        <div id='projectsPage'>
-        </div>
+        <Page id='projectsPage' title='Projects'>
+            {pageContent}
+        </Page>
     );
 }
 

@@ -2,17 +2,15 @@ export default class Qualification {
     #title: string;
     #graduationDate: string;
     #institutionName: string;
-    #logo: string;
 
     static QUALIFICATION_ERROR = 'QUALIFICATION VALUE NOT FOUND';
 
-    constructor(jsonResponse: string) {
-        const { title, graduationDate, institutionName, logo } = JSON.parse(jsonResponse);
+    constructor(jsonResponse: Qualification) {
+        const { title, graduationDate, institutionName } = jsonResponse;
 
         this.#title = title || Qualification.QUALIFICATION_ERROR;
         this.#graduationDate = graduationDate || Qualification.QUALIFICATION_ERROR;
         this.#institutionName = institutionName || Qualification.QUALIFICATION_ERROR;
-        this.#logo = logo || Qualification.QUALIFICATION_ERROR;
     }
 
     get title() {
@@ -25,9 +23,5 @@ export default class Qualification {
 
     get institutionName() {
         return this.#institutionName;
-    }
-
-    get logo() {
-        return this.#logo;
     }
 }

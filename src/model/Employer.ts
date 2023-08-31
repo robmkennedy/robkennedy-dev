@@ -8,8 +8,8 @@ export default class Employer {
 
     static EMPLOYER_ERROR = 'EMPLOYER VALUE NOT FOUND';
 
-    constructor(jsonResponse: string) {
-        const { name, role, startDate, endDate, logo, tasks } = JSON.parse(jsonResponse);
+    constructor(jsonResponse: Employer) {
+        const { name, role, startDate, endDate, logo, tasks } = jsonResponse;
 
         this.#name = name || Employer.EMPLOYER_ERROR;
         this.#role = role || Employer.EMPLOYER_ERROR;

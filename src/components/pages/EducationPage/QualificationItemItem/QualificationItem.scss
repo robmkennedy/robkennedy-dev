@@ -1,0 +1,20 @@
+@use '/src/styles/colors';
+@use '/src/styles/variables';
+
+.rk-qualification-item {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    .rk-qualification-detail {
+        display: flex;
+        align-items: center;
+        margin-bottom: .7rem;
+
+        img {
+            width: 25px;
+            margin-right: 10px;
+        }
+    }
+}

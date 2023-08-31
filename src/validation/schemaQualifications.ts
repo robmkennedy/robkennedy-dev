@@ -15,16 +15,12 @@ const schemaQualifications: JSONSchemaType<Qualification[]> = {
             },
             institutionName: {
                 type: 'string'
-            },
-            logo: {
-                type: 'string'
             }
         },
         required: [
             'title',
             'graduationDate',
-            'institutionName',
-            'logo'
+            'institutionName'
         ]
     }
 };

@@ -1,3 +1,4 @@
+import { Container, Row, Col } from 'react-bootstrap';
 import './Loader.scss';
 
 type LoaderProps = {
@@ -7,9 +8,17 @@ type LoaderProps = {
 const Loader = ({ message }: LoaderProps) => {
 
     return (
-        <div className='rk-loader'>
-            {message}
-        </div>
+        <Container>
+            <Row>
+                <Col>
+                    <div className='rk-loader'>
+                        <div>
+                            <h4>{message}</h4>
+                        </div>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 

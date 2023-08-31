@@ -10,7 +10,7 @@ type NavItemProps = {
 const NavItem = ({ label, path, classNames }: NavItemProps) => {
 
     return (
-        <NavLink className={`rk-nav-item ${classNames}`} to={path}>{label}</NavLink>
+        <NavLink className={`rk-nav-item text-uppercase ${classNames}`} to={path}>{label}</NavLink>
     );
 }
 

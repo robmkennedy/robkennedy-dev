@@ -1,13 +1,28 @@
 {
     "name": "Rob Kennedy",
-    "title": "Senior Front-End Engineer",
-    "photo": "/assets/imgages/profile.png",
-    "linkedIn": "linkedin.com/in/robmkennedy ",
+    "title": "Senior UI/UX Engineer",
+    "photo": "/images/profile-bw.jpg",
+    "linkedIn": "linkedin.com/in/robmkennedy",
     "summary": [
-        "Over 21 years of UI/UX engineering experience.",
-        "Expert in designing and building web applications.",
-        "HTML, JavaScript, CSS, React, Redux and more.",
-        "Worked for industry-leading technology companies.",
-        "Experienced in areas such as data analytics, cloud computing, telecoms and remote device monitoring."
+        {
+            "icon": "/images/icons/calendar.svg",
+            "text": "Over 21 years of UI/UX engineering experience."
+        },
+        {
+            "icon": "/images/icons/project.svg",
+            "text": "Expert in designing and building web applications."
+        },
+        {
+            "icon": "/images/icons/laptop.svg",
+            "text": "HTML, JavaScript, CSS, React, Redux and more."
+        },
+        {
+            "icon": "/images/icons/globe.svg",
+            "text": "Worked for industry-leading technology companies."
+        },
+        {
+            "icon": "/images/icons/analytics.svg",
+            "text": "Experienced in areas such as data analytics, cloud computing, telecoms and remote device monitoring."
+        }
     ]
 }

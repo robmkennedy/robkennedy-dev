@@ -20,7 +20,15 @@ const schemaProfile: JSONSchemaType<Profile> = {
             type: 'array',
             minItems: 1,
             items: {
-                type: 'string'
+                type: 'object',
+                properties: {
+                    icon: { type: 'string' },
+                    text: { type: 'string' }
+                },
+                required: [
+                    'icon',
+                    'text'
+                ]
             }
         }
     },

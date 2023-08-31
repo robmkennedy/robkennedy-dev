@@ -9,7 +9,7 @@ type SummaryPointProps = {
 const SummaryPoint = ({ icon, text }: SummaryPointProps) => {
 
     return (
-        <div className='rk-summary-point'>
+        <div className='rk-summary-point fw-light'>
             <img src={icon}/>
             <div>{text}</div>
         </div>

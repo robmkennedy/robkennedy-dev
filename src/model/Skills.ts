@@ -5,8 +5,8 @@ export default class Skills {
 
     static SKILLS_ERROR = 'SKILLS VALUE NOT FOUND';
 
-    constructor(jsonResponse: string) {
-        const { designSkills, developmentSkills, generalSkills } = JSON.parse(jsonResponse);
+    constructor(jsonResponse: Skills) {
+        const { designSkills, developmentSkills, generalSkills } = jsonResponse;
 
         this.#designSkills = designSkills || Skills.SKILLS_ERROR;
         this.#developmentSkills = developmentSkills || Skills.SKILLS_ERROR;

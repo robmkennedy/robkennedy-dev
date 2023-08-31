@@ -1,3 +1,4 @@
+import { Container, Row, Col } from 'react-bootstrap';
 import './Error.scss';
 
 type ErrorProps = {
@@ -7,9 +8,17 @@ type ErrorProps = {
 const Error = ({ message }: ErrorProps) => {
 
     return (
-        <div className='rk-error'>
-            {message}
-        </div>
+        <Container>
+            <Row>
+                <Col>
+                    <div className='rk-error'>
+                        <div>
+                            <h4>{message}</h4>
+                        </div>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 

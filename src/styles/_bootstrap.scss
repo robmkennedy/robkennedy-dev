@@ -1,27 +1,89 @@
+@import 'colors';
+
 $link-decoration: none;
 
-$body-color: white;
-$link-color: white;
+$body-color: $rk-primary;
+$link-color: $rk-primary;
+// $body-font-size: 1.2rem;
+$font-size-base: 1.2rem;
 
-$nav-link-color:                    red;
-$nav-link-hover-color:              green;
+$btn-close-color:  $rk-primary;
+$btn-close-opacity:  1;
+
+// $nav-link-color:                    blue;
+// $nav-link-hover-color:              #008000;
+
+// $accordion-color:  white;
+$accordion-bg:  transparent;
+// $accordion-button-color:                  $rk-secondary;
+// $accordion-icon-color:                  $rk-secondary;
+// $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
+// $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
+$accordion-button-active-bg:              $rk-secondary;
+$accordion-button-active-color:           #000000;
 
 $nav-link-padding-y:                1rem;
-$navbar-nav-link-padding-x:         2rem;
+$navbar-nav-link-padding-x:         1rem;
+$navbar-brand-margin-end:           6%;
+
+$navbar-toggler-focus-width: 0;
+
+// $nav-tabs-link-active-color: pink;
 
 
-$navbar-light-color:                green;
-$navbar-light-hover-color:          pink;
-$navbar-light-active-color:         orange;
-// $navbar-light-disabled-color:       #131313;
-// $navbar-light-icon-color:           #131313;
-// $navbar-light-toggler-icon-bg:      purple;
-$navbar-light-toggler-border-color: purple;
-$navbar-light-brand-color:          blue;
-$navbar-light-brand-hover-color:    blue;
+$navbar-dark-toggler-border-color: transparent;
 
-$body-bg: #505050;
-$body-tertiary-bg: transparent;
+$nav-underline-gap: .5rem;
+$nav-underline-link-active-color: $rk-secondary;
+
+// $navbar-light-color:                $rk-primary;
+// $navbar-light-hover-color:          $rk-secondary;
+// $navbar-light-active-color:         $rk-secondary;;
+// // $navbar-light-disabled-color:       #131313;
+// // $navbar-light-icon-color:           #131313;
+// // $navbar-light-toggler-icon-bg:      purple;
+// $navbar-light-toggler-border-color: purple;
+// $navbar-light-brand-color:          $rk-primary;
+// $navbar-light-brand-hover-color:    $rk-primary;
+
+$navbar-dark-color:                $rk-primary;
+$navbar-dark-hover-color: $rk-secondary;;
+$navbar-dark-active-color: $rk-secondary;;
+$navbar-dark-brand-color:          $rk-primary;
+$navbar-dark-brand-hover-color:          $rk-primary;
+
+$navbar-active-color: $rk-secondary;;
+
+// $offcanvas-padding-y:               $modal-inner-padding !default;
+// $offcanvas-padding-x:               $modal-inner-padding !default;
+// $offcanvas-horizontal-width:        400px !default;
+// $offcanvas-vertical-height:         30vh !default;
+// $offcanvas-transition-duration:     .3s !default;
+// $offcanvas-border-color:            $modal-content-border-color !default;
+// $offcanvas-border-width:            $modal-content-border-width !default;
+// $offcanvas-title-line-height:       $modal-title-line-height !default;
+$offcanvas-bg-color:                #474540;
+// $offcanvas-color:                   var(--#{$prefix}body-color) !default;
+// $offcanvas-box-shadow:              $modal-content-box-shadow-xs !default;
+// $offcanvas-backdrop-bg:             $modal-backdrop-bg !default;
+// $offcanvas-backdrop-opacity:        $modal-backdrop-opacity !default;
+
+
+// $nav-link-color: red;
+
+// $heading-color: $rk-primary;
+// $btn-close-color: $rk-primary;
+
+// $body-bg-dark:                      transparent;
+// $body-secondary-color-dark:         rgba($body-color-dark, .75) !default;
+// $body-secondary-bg-dark:            $gray-800 !default;
+// $body-tertiary-color-dark:          rgba($body-color-dark, .5) !default;
+// $body-tertiary-bg-dark:             mix($gray-800, $gray-900, 50%) !default;
+
+// $body-bg: #505050;
+// $bg-opacity: .1;
+// $body-tertiary-bg: transparent;
+
 
 @import '~bootstrap/scss/bootstrap';
-
+@import '~bootstrap/scss/bootstrap-grid';

@@ -13,7 +13,7 @@ type RouteProps = {
 };
 
 const routes: RouteProps[] = [
-    { labelText: 'Home', routePath: '/home', component: HomePage },
+    { labelText: 'Summary', routePath: '/summary', component: HomePage },
     { labelText: 'Skills', routePath: '/skills', component: SkillsPage },
     { labelText: 'Experience', routePath: '/experience', component: ExperiencePage },
     { labelText: 'Education', routePath: '/education', component: EducationPage },
