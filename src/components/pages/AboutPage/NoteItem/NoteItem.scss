@@ -1,0 +1,12 @@
+@use '/src/styles/colors';
+@use '/src/styles/variables';
+
+.rk-note-item {
+
+    font-weight: variables.$rk-font-light;
+
+    .rk-note-question {
+        color: colors.$rk-secondary;
+
+    }
+}

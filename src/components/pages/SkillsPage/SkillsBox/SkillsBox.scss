@@ -1,0 +1,6 @@
+@use '/src/styles/variables';
+
+.rk-skills-box {
+    font-weight: variables.$rk-font-light;
+    line-height: variables.$rk-line-height;
+}

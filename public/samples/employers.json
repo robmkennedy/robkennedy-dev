@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Samsung Electronics",
+        "location": "Vancouver, Canada",
+        "role": "Senior Front-end Engineer",
+        "startDate": "Jan 2016",
+        "endDate": "Mar 2022",
+        "logo": "/images/employers/samsung.svg",
+        "tasks": [
+            "Spearheaded and developed a new React framework for the Samsung IoT analytics portal.",
+            "Achieved huge performance improvements over existing analytics portal.",
+            "Created a new web portal for phone application data analytics.",
+            "Designed IoT phone application plugins for external Canadian service companies.",
+            "Created multiple wireframes, prototypes and proof-of-concept products.",
+            "Built a new React web application that provides validation of analytical data integrity."
+        ]
+    },
+    {
+        "name": "Synchronoss Technologies",
+        "location": "Dublin, Ireland",
+        "role": "Senior Front-End Engineer",
+        "startDate": "May 2014",
+        "endDate": "Feb 2015",
+        "logo": "/images/employers/synchronoss.svg",
+        "tasks": [
+            "Providing Cloud Enterprise software applications for major clients worldwide.",
+            "Built a white-label web application with a custom JavaScript framework.",
+            "Worked closely with UX Designers from external companies.",
+            "Achieved pixel-accurate interfaces based directly on PSD designs."
+        ]
+    },
+    {
+        "name": "Hewlett Packard",
+        "location": "Galway, Ireland",
+        "role": "Expert Software Engineer",
+        "startDate": "Mar 2011",
+        "endDate": "May 2013",
+        "logo": "/images/employers/hp.svg",
+        "tasks": [
+            "Technical lead of the UI team and delegated tasks to other developers.",
+            "Designed and implemented a major UI component of a HP remote monitoring system.",
+            "Had an immediate impact by improving layout, functionality and usability.",
+            "Worked closely with the back-end team on Java-based business logic.",
+            "Demonstrated initiative with wireframe work for an alternative version of the UI."
+        ]
+    },
+    {
+        "name": "Avaya",
+        "location": "Galway, Ireland",
+        "role": "Senior Software Engineer",
+        "startDate": "Sep 2007",
+        "endDate": "Mar 2011",
+        "logo": "/images/employers/avaya.svg",
+        "tasks": [
+            "Developed an Avaya Contact Centre UI application based on the Eclipse RCP.",
+            "Responsible for product software architecture and future architectural developments.",
+            "Major contributor to UI design including layout, naming conventions and iconography."
+        ]
+    },
+    {
+        "name": "Ericsson",
+        "location": "Athlone, Ireland",
+        "role": "Software Engineer",
+        "startDate": "Jul 2000",
+        "endDate": "Sep 2007",
+        "logo": "/images/employers/ericsson.svg",
+        "tasks": [
+            "Developed an architecture framework to facilitate future Ericsson UI Java applications.",
+            "Responsible for the design of the main UI application of the Ericsson OSS."
+        ]
+    }
+]
