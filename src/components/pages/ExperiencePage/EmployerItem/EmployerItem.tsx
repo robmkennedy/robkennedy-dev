@@ -14,7 +14,7 @@ const EmployerItem = ({ eventKey, employer }: EmployerItemProps) => {
     return (
         <Accordion.Item eventKey={eventKey}>
             <Accordion.Header>
-                <div className='rk-employer-header fw-light'>
+                <div className='rk-employer-header'>
                     <div>
                         <div className='rk-employer-name'>{employer.name}</div>
                         <div className='rk-employer-role'>{employer.role}</div>
@@ -23,11 +23,9 @@ const EmployerItem = ({ eventKey, employer }: EmployerItemProps) => {
                 </div>
             </Accordion.Header>
             <Accordion.Body>
-                <div className='rk-employer-body fw-light'>
-                    <ul>
-                        {taskList}
-                    </ul>
-                    <div className='d-none d-lg-flex rk-employer-image'><img src={employer.logo} /></div>
+                <div className='rk-employer-body'>
+                    <ul>{taskList}</ul>
+                    <div className='rk-employer-image d-none d-lg-flex'><img src={employer.logo} alt='Employer logo' /></div>
                 </div>
             </Accordion.Body>
         </Accordion.Item>

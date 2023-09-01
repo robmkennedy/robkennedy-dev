@@ -13,6 +13,9 @@ const schemaProfile: JSONSchemaType<Profile> = {
         photo: {
             type: 'string'
         },
+        gitHub: {
+            type: 'string'
+        },
         linkedIn: {
             type: 'string'
         },
@@ -35,6 +38,7 @@ const schemaProfile: JSONSchemaType<Profile> = {
     required: [
         'name',
         'photo',
+        'gitHub',
         'linkedIn',
         'summary'
     ]

@@ -1,9 +1,8 @@
-import { useFetchEmployers } from 'hooks/networkHooks';
-import './ExperiencePage.scss';
-import { usePageStatus } from 'hooks/componentHooks';
 import { Container, Row, Col, Accordion } from 'react-bootstrap';
-import Page from '../Page/Page';
-import EmployerItem from './EmployerItem/EmployerItem';
+import Page from 'components/pages/Page/Page';
+import EmployerItem from 'components/pages/ExperiencePage/EmployerItem/EmployerItem';
+import { usePageStatus } from 'hooks/componentHooks';
+import { useFetchEmployers } from 'hooks/networkHooks';
 
 const ExperiencePage = () => {
 
@@ -21,7 +20,7 @@ const ExperiencePage = () => {
             <Container>
                 <Row>
                     <Col>
-                        <Accordion className='fw-light'>
+                        <Accordion>
                             {employerItems}
                         </Accordion>
                     </Col>

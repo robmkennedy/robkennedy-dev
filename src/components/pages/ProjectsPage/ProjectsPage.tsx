@@ -1,8 +1,6 @@
-import { useFetchQualifications } from 'hooks/networkHooks';
-import './ProjectsPage.scss';
-import { usePageStatus } from 'hooks/componentHooks';
 import { Container, Row, Col } from 'react-bootstrap';
-import Page from '../Page/Page';
+import Page from 'components/pages/Page/Page';
+import './ProjectsPage.scss';
 
 const ProjectsPage = () => {
 
@@ -10,7 +8,7 @@ const ProjectsPage = () => {
         <Container>
             <Row>
                 <Col>
-                    <div className='fw-light'>Future projects will be linked from this page.</div>
+                    <div className='rk-project-title'>Future projects will be linked from this page.</div>
                 </Col>
             </Row>
         </Container>

@@ -1,10 +1,9 @@
 import { Nav } from 'react-bootstrap';
-import SkillsBox from '../SkillsBox/SkillsBox';
-import './SkillsNav.scss';
-import { useAppDispatch } from 'hooks/stateHooks';
 import { SkillType } from 'utils/types';
-import { skillTypeSelected } from 'state/slices/layoutSlice';
+import { useAppDispatch } from 'hooks/stateHooks';
 import { useLayoutSelector } from 'hooks/selectorHooks';
+import { skillTypeSelected } from 'state/slices/layoutSlice';
+import './SkillsNav.scss';
 
 const SkillsNav = () => {
 

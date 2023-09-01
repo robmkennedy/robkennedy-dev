@@ -1,8 +1,11 @@
+@use 'src/styles/variables';
+
 .rk-summary-point {
 
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    font-weight: variables.$rk-font-light;
 
     img {
         width: 25px;

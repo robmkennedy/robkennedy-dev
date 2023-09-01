@@ -1,14 +1,12 @@
-import { useFetchSkills } from 'hooks/networkHooks';
-import { usePageStatus } from 'hooks/componentHooks';
 import { Container, Row, Col } from 'react-bootstrap';
 import Page from 'components/pages/Page/Page';
-import SkillsBox from './SkillsBox/SkillsBox';
-import './SkillsPage.scss';
-import SkillsNav from './SkillsNav/SkillsNav';
-import { Fragment } from 'react';
+import SkillsBox from 'components/pages/SkillsPage/SkillsBox/SkillsBox';
+import SkillsNav from 'components/pages/SkillsPage/SkillsNav/SkillsNav';
+import { usePageStatus } from 'hooks/componentHooks';
+import { useFetchSkills } from 'hooks/networkHooks';
 
 const SkillsPage = () => {
-
+    
     const { isLoading, isError, data } = useFetchSkills();
 
     let pageContent = usePageStatus(isLoading, isError);

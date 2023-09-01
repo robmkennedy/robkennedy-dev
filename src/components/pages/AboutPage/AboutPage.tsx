@@ -1,8 +1,8 @@
-import { useFetchNotes, useFetchProfile, useFetchQualifications } from 'hooks/networkHooks';
-import './AboutPage.scss';
-import { usePageStatus } from 'hooks/componentHooks';
 import { Container, Row, Col } from 'react-bootstrap';
-import Page from '../Page/Page';
+import Page from 'components/pages/Page/Page';
+import NoteItem from 'components/pages/AboutPage/NoteItem/NoteItem';
+import { usePageStatus } from 'hooks/componentHooks';
+import { useFetchNotes } from 'hooks/networkHooks';
 
 const AboutPage = () => {
 
@@ -12,15 +12,15 @@ const AboutPage = () => {
 
     if (!pageContent && data) {
 
-        const noteItems = data.map((note) => {
-            return <p>{note.content}</p>;
+        const noteItems = data.map((note, index) => {
+            return <NoteItem note={note} key={index}/>;
         });
 
         pageContent = (
             <Container>
                 <Row>
                     <Col>
-                        <div className='fw-light'>
+                        <div>
                             {noteItems}
                         </div>
                     </Col>

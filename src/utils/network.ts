@@ -1,15 +1,15 @@
-import axios, { AxiosResponse } from "axios";
-import Skills from "model/Skills";
-import Profile from "model/Profile";
-import Employer from "model/Employer";
-import Qualification from "model/Qualification";
-import Note from "model/Note";
+import axios from 'axios';
+import Note from 'model/Note';
+import Skills from 'model/Skills';
+import Profile from 'model/Profile';
+import Employer from 'model/Employer';
+import Qualification from 'model/Qualification';
 
 const axiosInstance = axios.create({
     baseURL: '/samples',
     timeout: 1000,
     headers: {
-        "Content-type": "application/json"
+        'Content-type': 'application/json'
     }
 });
 

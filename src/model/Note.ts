@@ -1,15 +1,21 @@
 export default class Note {
-    #content: string;
+    #question: string;
+    #answers: string[];
 
     static NOTE_ERROR = 'NOTE VALUE NOT FOUND';
 
     constructor(jsonResponse: Note) {
-        const { content } = jsonResponse;
+        const { question, answers } = jsonResponse;
 
-        this.#content = content || Note.NOTE_ERROR;
+        this.#question = question || Note.NOTE_ERROR;
+        this.#answers = answers || [Note.NOTE_ERROR];
     }
 
-    get content() {
-        return this.#content;
+    get question() {
+        return this.#question;
+    }
+
+    get answers() {
+        return this.#answers;
     }
 };

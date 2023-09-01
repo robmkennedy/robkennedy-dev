@@ -8,9 +8,9 @@ export default class Skills {
     constructor(jsonResponse: Skills) {
         const { designSkills, developmentSkills, generalSkills } = jsonResponse;
 
-        this.#designSkills = designSkills || Skills.SKILLS_ERROR;
-        this.#developmentSkills = developmentSkills || Skills.SKILLS_ERROR;
-        this.#generalSkills = generalSkills || Skills.SKILLS_ERROR;
+        this.#designSkills = designSkills || [Skills.SKILLS_ERROR];
+        this.#developmentSkills = developmentSkills || [Skills.SKILLS_ERROR];
+        this.#generalSkills = generalSkills || [Skills.SKILLS_ERROR];
     }
 
     get designSkills() {

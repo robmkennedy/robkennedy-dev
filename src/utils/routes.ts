@@ -1,10 +1,10 @@
-import SkillsPage from 'components/pages/SkillsPage/SkillsPage';
+import { FunctionComponent } from 'react';
 import HomePage from 'components/pages/HomePage/HomePage';
+import AboutPage from 'components/pages/AboutPage/AboutPage';
+import SkillsPage from 'components/pages/SkillsPage/SkillsPage';
+import ProjectsPage from 'components/pages/ProjectsPage/ProjectsPage';
 import EducationPage from 'components/pages/EducationPage/EducationPage';
 import ExperiencePage from 'components/pages/ExperiencePage/ExperiencePage';
-import ProjectsPage from 'components/pages/ProjectsPage/ProjectsPage';
-import AboutPage from 'components/pages/AboutPage/AboutPage';
-import { FunctionComponent } from 'react';
 
 type RouteProps = {
     routePath: string;

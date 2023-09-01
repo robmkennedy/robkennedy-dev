@@ -18,6 +18,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+            font-weight: variables.$rk-font-light;
         }
     }
 }
@@ -28,6 +29,7 @@
     align-items: center;
     justify-content: space-between;
     line-height: variables.$rk-line-height;
+    font-weight: variables.$rk-font-light;
 
     ul {
         margin-bottom: 0;

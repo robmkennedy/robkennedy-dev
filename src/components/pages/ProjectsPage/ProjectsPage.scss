@@ -1,5 +1,5 @@
-#summaryPage {
-    height: 100%;
-    width: 100%;
-    background-color: red;
+@use '/src/styles/variables';
+
+.rk-project-title {
+    font-weight: variables.$rk-font-light;
 }

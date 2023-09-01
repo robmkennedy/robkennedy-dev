@@ -1,89 +1,38 @@
-@import 'colors';
+@use 'variables';
+@use 'colors';
 
 $link-decoration: none;
 
-$body-color: $rk-primary;
-$link-color: $rk-primary;
-// $body-font-size: 1.2rem;
+$body-color: colors.$rk-primary;
+$link-color: colors.$rk-primary;
 $font-size-base: 1.2rem;
 
-$btn-close-color:  $rk-primary;
+$btn-close-color:  colors.$rk-primary;
 $btn-close-opacity:  1;
 
-// $nav-link-color:                    blue;
-// $nav-link-hover-color:              #008000;
-
-// $accordion-color:  white;
 $accordion-bg:  transparent;
-// $accordion-button-color:                  $rk-secondary;
-// $accordion-icon-color:                  $rk-secondary;
-// $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
-// $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              $rk-secondary;
-$accordion-button-active-color:           #000000;
+$accordion-button-active-bg:    colors.$rk-secondary;
+$accordion-button-active-color: colors.$rk-accordion-active;
 
-$nav-link-padding-y:                1rem;
-$navbar-nav-link-padding-x:         1rem;
-$navbar-brand-margin-end:           6%;
+$nav-link-padding-y:    1rem;
+$nav-link-font-weight:  variables.$rk-font-light;
+$navbar-nav-link-padding-x: 1rem;
 
+$navbar-brand-margin-end:   6%;
 $navbar-toggler-focus-width: 0;
+$navbar-active-color: colors.$rk-secondary;
 
-// $nav-tabs-link-active-color: pink;
-
-
-$navbar-dark-toggler-border-color: transparent;
+$navbar-dark-color:         colors.$rk-primary;
+$navbar-dark-hover-color:   colors.$rk-secondary;;
+$navbar-dark-active-color:  colors.$rk-secondary;;
+$navbar-dark-brand-color:   colors.$rk-primary;
+$navbar-dark-brand-hover-color: colors.$rk-primary;
+$navbar-dark-toggler-border-color:  transparent;
 
 $nav-underline-gap: .5rem;
-$nav-underline-link-active-color: $rk-secondary;
+$nav-underline-link-active-color: colors.$rk-secondary;
 
-// $navbar-light-color:                $rk-primary;
-// $navbar-light-hover-color:          $rk-secondary;
-// $navbar-light-active-color:         $rk-secondary;;
-// // $navbar-light-disabled-color:       #131313;
-// // $navbar-light-icon-color:           #131313;
-// // $navbar-light-toggler-icon-bg:      purple;
-// $navbar-light-toggler-border-color: purple;
-// $navbar-light-brand-color:          $rk-primary;
-// $navbar-light-brand-hover-color:    $rk-primary;
-
-$navbar-dark-color:                $rk-primary;
-$navbar-dark-hover-color: $rk-secondary;;
-$navbar-dark-active-color: $rk-secondary;;
-$navbar-dark-brand-color:          $rk-primary;
-$navbar-dark-brand-hover-color:          $rk-primary;
-
-$navbar-active-color: $rk-secondary;;
-
-// $offcanvas-padding-y:               $modal-inner-padding !default;
-// $offcanvas-padding-x:               $modal-inner-padding !default;
-// $offcanvas-horizontal-width:        400px !default;
-// $offcanvas-vertical-height:         30vh !default;
-// $offcanvas-transition-duration:     .3s !default;
-// $offcanvas-border-color:            $modal-content-border-color !default;
-// $offcanvas-border-width:            $modal-content-border-width !default;
-// $offcanvas-title-line-height:       $modal-title-line-height !default;
-$offcanvas-bg-color:                #474540;
-// $offcanvas-color:                   var(--#{$prefix}body-color) !default;
-// $offcanvas-box-shadow:              $modal-content-box-shadow-xs !default;
-// $offcanvas-backdrop-bg:             $modal-backdrop-bg !default;
-// $offcanvas-backdrop-opacity:        $modal-backdrop-opacity !default;
-
-
-// $nav-link-color: red;
-
-// $heading-color: $rk-primary;
-// $btn-close-color: $rk-primary;
-
-// $body-bg-dark:                      transparent;
-// $body-secondary-color-dark:         rgba($body-color-dark, .75) !default;
-// $body-secondary-bg-dark:            $gray-800 !default;
-// $body-tertiary-color-dark:          rgba($body-color-dark, .5) !default;
-// $body-tertiary-bg-dark:             mix($gray-800, $gray-900, 50%) !default;
-
-// $body-bg: #505050;
-// $bg-opacity: .1;
-// $body-tertiary-bg: transparent;
-
+$offcanvas-bg-color:    colors.$rk-sidebar-bg;
 
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap/scss/bootstrap-grid';

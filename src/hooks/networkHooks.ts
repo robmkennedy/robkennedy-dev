@@ -1,10 +1,10 @@
-import { UseQueryResult, useQuery } from "@tanstack/react-query";
-import Employer from "model/Employer";
-import Note from "model/Note";
-import Profile from "model/Profile";
-import Qualification from "model/Qualification";
-import Skills from "model/Skills";
-import { fetchEmployers, fetchProfile, fetchSkills, fetchQualifications, fetchNotes } from "utils/network";
+import { UseQueryResult, useQuery } from '@tanstack/react-query';
+import Note from 'model/Note';
+import Skills from 'model/Skills';
+import Profile from 'model/Profile';
+import Employer from 'model/Employer';
+import Qualification from 'model/Qualification';
+import { fetchEmployers, fetchProfile, fetchSkills, fetchQualifications, fetchNotes } from 'utils/network';
 
 enum QueryKeys {
     QUERY_SKILLS = 'QUERY_SKILLS',

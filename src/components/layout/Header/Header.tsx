@@ -1,12 +1,11 @@
-import { NavbarBrand, Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import MenuItem from 'components/controls/NavItem/NavItem';
-import routes from 'utils/routes';
-import './Header.scss';
-import { useLocation } from 'react-router-dom';
+import { NavbarBrand, Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useAppDispatch } from 'hooks/stateHooks';
-import { sidePanelClosed, sidePanelOpened, sidePanelToggled } from 'state/slices/layoutSlice';
 import { useLayoutSelector } from 'hooks/selectorHooks';
+import { sidePanelClosed, sidePanelToggled } from 'state/slices/layoutSlice';
+import routes from 'utils/routes';
 
 const Header = () => {
 
@@ -17,7 +16,7 @@ const Header = () => {
     // Close sidebar if the location changes
     useEffect(() => {
         dispatch(sidePanelClosed());
-    }, [location]);
+    }, [dispatch, location]);
 
     const handleToggle = () => {
         dispatch(sidePanelToggled());
@@ -35,7 +34,7 @@ const Header = () => {
                 <Container>
                     <NavbarBrand>Rob Kennedy</NavbarBrand>
                     <Navbar.Toggle aria-controls='navbarNav' />
-                    <Navbar.Offcanvas id='navbarNav' className='fw-light' show={sidePanelOpen}>
+                    <Navbar.Offcanvas id='navbarNav' show={sidePanelOpen}>
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title>
                                 Rob Kennedy

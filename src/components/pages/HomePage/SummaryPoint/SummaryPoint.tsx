@@ -1,5 +1,5 @@
-import './SummaryPoint.scss';
 import { memo } from 'react';
+import './SummaryPoint.scss';
 
 type SummaryPointProps = {
     icon: string,
@@ -9,8 +9,8 @@ type SummaryPointProps = {
 const SummaryPoint = ({ icon, text }: SummaryPointProps) => {
 
     return (
-        <div className='rk-summary-point fw-light'>
-            <img src={icon}/>
+        <div className='rk-summary-point'>
+            <img src={icon} alt='Summary Point Logo'/>
             <div>{text}</div>
         </div>
     );

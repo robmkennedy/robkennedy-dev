@@ -1,10 +1,8 @@
-import { useFetchQualifications } from 'hooks/networkHooks';
-import './EducationPage.scss';
-import { usePageStatus } from 'hooks/componentHooks';
 import { Container, Row, Col } from 'react-bootstrap';
-import Page from '../Page/Page';
-import QualificationItem from './QualificationItemItem/QualificationItem';
-
+import Page from 'components/pages/Page/Page';
+import QualificationItem from 'components/pages/EducationPage/QualificationItem/QualificationItem';
+import { usePageStatus } from 'hooks/componentHooks';
+import { useFetchQualifications } from 'hooks/networkHooks';
 
 const EducationPage = () => {
 

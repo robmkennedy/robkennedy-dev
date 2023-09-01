@@ -1,2 +1,8 @@
-// #rk-page {
-// }
+@use 'src/styles/variables';
+
+.rk-page {
+
+    .rk-page-title {
+        font-weight: variables.$rk-font-light;
+    }
+}

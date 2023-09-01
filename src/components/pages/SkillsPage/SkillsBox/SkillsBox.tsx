@@ -1,7 +1,7 @@
-import { useLayoutSelector } from 'hooks/selectorHooks';
-import './SkillsBox.scss';
 import { SkillType } from 'utils/types';
 import { useFetchSkills } from 'hooks/networkHooks';
+import { useLayoutSelector } from 'hooks/selectorHooks';
+import './SkillsBox.scss';
 
 
 const SkillsBox = () => {
@@ -26,11 +26,11 @@ const SkillsBox = () => {
         }
     }
 
-    const skillsMarkup = skills.map((text, index) => <li className='rk-skills-box-skill' key={index}>{text}</li>);
+    const skillItems = skills.map((text, index) => <li className='rk-skills-box-skill' key={index}>{text}</li>);
 
     return (
-        <div className='rk-skills-box fw-light'>
-            <div className='rk-skills-box-content'><ul>{skillsMarkup}</ul></div>
+        <div className='rk-skills-box'>
+            <div className='rk-skills-box-content'><ul>{skillItems}</ul></div>
         </div>
     );
 }

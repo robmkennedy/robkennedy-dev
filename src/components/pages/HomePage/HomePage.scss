@@ -5,21 +5,36 @@
 
     #infoPanel {
         display: flex;
+        margin-bottom: 2rem;
 
-        img {
+        #profileImg {
             width: 100%;
-            max-width: variables.$rk-max-image-size;
-            max-height: variables.$rk-max-image-size;
+            max-width: variables.$rk-max-profile-size;
+            max-height: variables.$rk-max-profile-size;
             border-radius: 50%;
             margin-right: 40px;
         }
 
         #profileTitle {
+            margin-bottom: 1.4rem;
+            font-weight: variables.$rk-font-light;
             color: colors.$rk-secondary;
         }
 
-        #profileLink {
-            color: colors.$rk-link;
+        .rk-profile-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img {
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
+
+            a {
+                color: colors.$rk-link;
+            }
         }
     }
 }
