@@ -13,7 +13,7 @@ const Page = ({ id, title, children }: PageProps) => {
         <div id={id} className='rk-page'>
             <Container>
                 <Row>
-                    <h1 className='rk-page-title mt-lg-4 mb-3 mb-lg-5'>{title}</h1>
+                    <h1 className='rk-page-title mt-lg-4 mb-4 mb-lg-5'>{title}</h1>
                 </Row>
             </Container>
             {children}

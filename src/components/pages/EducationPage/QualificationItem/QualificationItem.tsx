@@ -9,7 +9,7 @@ type QualificationItemProps = {
 const QualificationItem = ({ qualification }: QualificationItemProps) => {
 
     return (
-        <div className='rk-qualification-item fw-light'>
+        <div className='rk-qualification-item'>
             <Container>
                 <Row>
                     <Col xs={12} md={9}>

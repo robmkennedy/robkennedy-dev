@@ -5,7 +5,7 @@
 
     button {
         &:after {
-            margin-left: 20px;
+            margin-left: 10px;
         }
 
         &.collapsed {
@@ -33,6 +33,7 @@
 
     ul {
         margin-bottom: 0;
+        padding-left: 1rem;
     }
 
     .rk-employer-image {

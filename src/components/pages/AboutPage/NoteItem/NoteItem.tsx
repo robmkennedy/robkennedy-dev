@@ -7,8 +7,8 @@ type NoteItemProps = {
 
 const NoteItem = ({ note }: NoteItemProps) => {
 
-    const answerItems = note.answers.map((answer) => {
-        return <li>{answer}</li>;
+    const answerItems = note.answers.map((answer, index) => {
+        return <li key={index}>{answer}</li>;
     });
 
     return (

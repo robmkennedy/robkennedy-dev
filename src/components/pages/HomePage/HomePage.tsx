@@ -25,11 +25,11 @@ const HomePage = () => {
                                 <h5 id='profileTitle'>{data.title}</h5>
                                 <div className='rk-profile-link'>
                                     <img src={'/images/icons/linkedin.svg'} alt='Linked In' />
-                                    <a target='_blank' rel='noreferrer' href={`https://${data.linkedIn}`}>{data.linkedIn}</a>
+                                    <a target='_blank' rel='noreferrer' href={`https://${data.linkedIn}`}>LinkedIn</a>
                                 </div>
                                 <div className='rk-profile-link'>
                                     <img src={'/images/icons/github.svg'} alt='GitHub' />
-                                    <a target='_blank' rel='noreferrer' href={`https://${data.gitHub}`}>{data.gitHub}</a>
+                                    <a target='_blank' rel='noreferrer' href={`https://${data.gitHub}`}>GitHub</a>
                                 </div>
                             </div>
                         </div>

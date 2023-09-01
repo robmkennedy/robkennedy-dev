@@ -5,7 +5,6 @@ $link-decoration: none;
 
 $body-color: colors.$rk-primary;
 $link-color: colors.$rk-primary;
-$font-size-base: 1.2rem;
 
 $btn-close-color:  colors.$rk-primary;
 $btn-close-opacity:  1;
@@ -33,6 +32,7 @@ $nav-underline-gap: .5rem;
 $nav-underline-link-active-color: colors.$rk-secondary;
 
 $offcanvas-bg-color:    colors.$rk-sidebar-bg;
+$offcanvas-horizontal-width: 300px;
 
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap/scss/bootstrap-grid';
