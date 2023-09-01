@@ -32,6 +32,7 @@ $nav-underline-gap: .5rem;
 $nav-underline-link-active-color: colors.$rk-secondary;
 
 $offcanvas-bg-color:    colors.$rk-sidebar-bg;
+$offcanvas-horizontal-width: 300px;
 
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap/scss/bootstrap-grid';
