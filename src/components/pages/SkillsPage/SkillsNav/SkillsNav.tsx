@@ -19,15 +19,15 @@ const SkillsNav = () => {
             <Nav variant="underline" className="flex-lg-column" onSelect={handleNavSelect}>
                 <Nav.Item className='flex-fill text-center text-lg-start me-lg-auto'>
                     <Nav.Link active={selectedSkillType === SkillType.SKILL_DESIGN}
-                        className='' eventKey={SkillType.SKILL_DESIGN}>Design</Nav.Link>
+                        className='' eventKey={SkillType.SKILL_DESIGN} data-testid='skills-design-link'>Design</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='flex-fill text-center text-lg-start me-lg-auto'>
                     <Nav.Link active={selectedSkillType === SkillType.SKILL_DEVELOPMENT}
-                        className='' eventKey={SkillType.SKILL_DEVELOPMENT}>Development</Nav.Link>
+                        className='' eventKey={SkillType.SKILL_DEVELOPMENT} data-testid='skills-dev-link'>Development</Nav.Link>
                 </Nav.Item>
                 <Nav.Item className='flex-fill text-center text-lg-start me-lg-auto'>
                     <Nav.Link active={selectedSkillType === SkillType.SKILL_GENERAL}
-                        className='' eventKey={SkillType.SKILL_GENERAL}>General</Nav.Link>
+                        className='' eventKey={SkillType.SKILL_GENERAL} data-testid='skills-general-link'>General</Nav.Link>
                 </Nav.Item>
             </Nav>
         </div>

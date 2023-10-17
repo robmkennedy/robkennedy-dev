@@ -4,7 +4,12 @@ import './Error.scss';
 type ErrorProps = {
     message: string
 }
-
+/**
+ *
+ *
+ * @param {ErrorProps} { message }
+ * @return {*} 
+ */
 const Error = ({ message }: ErrorProps) => {
 
     return (

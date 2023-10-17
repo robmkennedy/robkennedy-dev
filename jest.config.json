@@ -1,0 +1,30 @@
+{
+    "preset": "ts-jest",
+    "transform": {
+        "^.+\\.ts?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+        "<rootDir>/node_modules/"
+    ],
+    "roots": [
+        "<rootDir>",
+        "<rootDir>/src/"
+    ],
+    "modulePaths": [
+        "<rootDir>",
+        "<rootDir>/src/"
+    ],
+    "moduleDirectories": [
+        "node_modules"
+    ],
+    "moduleNameMapper": {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.ts",
+        "\\.(scss|css|less)$": "<rootDir>/__mocks__/styleMock.ts"
+    },
+    "clearMocks": true,
+    "resetMocks": true,
+    "restoreMocks": true,
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "testEnvironment": "jsdom"
+}

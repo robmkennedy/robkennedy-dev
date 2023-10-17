@@ -30,7 +30,7 @@ const SkillsBox = () => {
 
     return (
         <div className='rk-skills-box'>
-            <div className='rk-skills-box-content'><ul>{skillItems}</ul></div>
+            <div className='rk-skills-box-content' data-testid='skills-content'><ul>{skillItems}</ul></div>
         </div>
     );
 }
