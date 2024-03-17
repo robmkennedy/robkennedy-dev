@@ -1,5 +1,19 @@
 [
     {
+        "name": "Genesys",
+        "location": "Remote, Ireland",
+        "role": "Staff Front-End Engineer",
+        "startDate": "Dec 2023",
+        "endDate": "Present",
+        "logo": "/images/employers/genesys.svg",
+        "tasks": [
+            "Providing new features for the main Genesys Cloud analytics portal.",
+            "Building Ember and Typescript web applications via multiple repos.",
+            "Working remotely with an American-based team of nine front-end engineers.",
+            "Interacting closely with a large UX department utilising Figma designs."
+        ]
+    },
+    {
         "name": "Samsung Electronics",
         "location": "Vancouver, Canada",
         "role": "Senior Front-End Engineer",

@@ -3,7 +3,7 @@
         "question": "Why was the app built?",
         "answers": [
             "After taking a career break, I am looking for new projects to flex my development muscles. At the same time, I realized a biography site would be useful, so I developed this project in my spare time.",
-            "A simple site such as this could be build with any number of site builders. However I have over-engineered this app with Typescript, React, Redux, Routing, data fetching and validation."
+            "A simple site such as this could be built with any number of site builders. However I have over-engineered this app with Typescript, React, Redux, Routing, data fetching and validation."
         ]
     },
     {
@@ -25,9 +25,9 @@
         "question": "What have I learned?",
         "answers": [
             "This is my first time to develop an entire app with Typescript. It seems to integrate with react well. I have spent years in my past career as a Java developer, so I am comfortable with strongly-types languages.",
-            "React Redux Toolkit has a new concept of slices. I found this very convenient as it removed alot of the reducer/action boiler-plate I have written before.",
+            "React Redux Toolkit has a new concept of slices. I found this very convenient as it removed a lot of the reducer/action boiler-plate I have written before.",
             "Integrating React Query was simple due to its available hooks, however in this app, we are reading local json files for data, which doesn't take full advantage of caching techniques.",
-            "I built the validation schemas but have yet to integrate them. I haven't decided if a web application should actually need to validate the API data. Wrapping the json response in the site model classes provide safety values incase any returned data is missing."
+            "I built the validation schemas but have yet to integrate them. I haven't decided if a web application should actually need to validate the API data. Wrapping the json response in the site model classes provide safety values in case any returned data is missing."
         ]
     },
     {
