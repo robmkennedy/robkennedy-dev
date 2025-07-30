@@ -1,10 +1,24 @@
 [
     {
+        "name": "JPMorgan Chase & Co.",
+        "location": "Remote, Ireland",
+        "role": "Lead Front-End Engineer",
+        "startDate": "Jul 2024",
+        "endDate": "Jan 2025",
+        "logo": "/images/employers/jp-morgan.svg",
+        "tasks": [
+            "Responsible for a major UI component of J.P. Morgan financial software.",
+            "Mentored other UI engineers via design discussions and detailed code reviews.",
+            "Engaged with business teams to translate customer requirements into features.",
+            "Primary driver of product design and user experience."
+        ]
+    },
+    {
         "name": "Genesys",
         "location": "Remote, Ireland",
         "role": "Staff Front-End Engineer",
         "startDate": "Dec 2023",
-        "endDate": "Present",
+        "endDate": "Jul 2024",
         "logo": "/images/employers/genesys.svg",
         "tasks": [
             "Providing new features for the main Genesys Cloud analytics portal.",

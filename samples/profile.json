@@ -1,13 +1,13 @@
 {
     "name": "Rob Kennedy",
-    "title": "Staff UI/UX Engineer",
+    "title": "Lead Front-end Engineer",
     "photo": "/images/profile-bw.jpg",
     "gitHub": "github.com/robmkennedy",
     "linkedIn": "linkedin.com/in/robmkennedy",
     "summary": [
         {
             "icon": "/images/icons/calendar.svg",
-            "text": "Over 22 years of UI/UX engineering experience."
+            "text": "Over 23 years of front-end engineering experience."
         },
         {
             "icon": "/images/icons/project.svg",
@@ -15,7 +15,7 @@
         },
         {
             "icon": "/images/icons/laptop.svg",
-            "text": "HTML, JavaScript, CSS, React, Redux and more."
+            "text": "HTML, TypeScript, CSS, React, Redux and more."
         },
         {
             "icon": "/images/icons/globe.svg",
@@ -23,7 +23,7 @@
         },
         {
             "icon": "/images/icons/analytics.svg",
-            "text": "Experienced in areas such as data analytics, cloud computing, telecoms and remote device monitoring."
+            "text": "Experienced in areas such as finance, data analytics, cloud computing and telecoms."
         }
     ]
 }
